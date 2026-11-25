@@ -18,16 +18,28 @@ public class Main {
         Producto pDuplicado1 = new Producto("sku-001", "Monitor Dell Clonado", 500.00, 5);
         Producto pDuplicado2 = new Producto("SKU-005", "Leche Evaporada Repetida", 90.00, 10);
 
-        // Impresión de verificación
-        System.out.println("Vista previa de objetos:");
-        System.out.println(p1);
-        System.out.println(p2);
-        System.out.println(p3);
-        System.out.println(p4);
-        System.out.println(p5);
-        System.out.println(p6);
-        System.out.println(p7);
-        System.out.println(p8);
+        // Registro de productos en el inventario (HashSet)
+        Inventario inventario = new Inventario();
+
+        System.out.println("--- Registro de productos ---");
+        inventario.registrarProducto(p1);
+        inventario.registrarProducto(p2);
+        inventario.registrarProducto(p3);
+        inventario.registrarProducto(p4);
+        inventario.registrarProducto(p5);
+        inventario.registrarProducto(p6);
+        inventario.registrarProducto(p7);
+        inventario.registrarProducto(p8);
+
+        // Prueba de duplicados
+        System.out.println("\n--- Prueba de duplicados ---");
+        inventario.registrarProducto(pDuplicado1);
+        inventario.registrarProducto(pDuplicado2);
+
+        // Recorrido y visualizacion
+        System.out.println();
+        inventario.mostrarProductos();
+        System.out.println("\nTotal de productos registrados: " + inventario.cantidadProductos());
 
     }
 }

@@ -1,5 +1,7 @@
 package pe.edu.isil;
 
+import java.util.Objects;
+
 public class Producto {
     protected String codigoSku;
     protected String nombre;
@@ -50,5 +52,20 @@ public class Producto {
     public String toString() {
         return String.format("[%s] %s | Precio Base: S/ %.2f | Stock: %d unidades",
                 codigoSku, nombre, precioBase, stock);
+    }
+
+    // Dos productos son iguales si tienen el mismo SKU (sin importar mayusculas/minusculas).
+    // Esto permite que el HashSet detecte los registros duplicados.
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Producto otro = (Producto) obj;
+        return codigoSku.equalsIgnoreCase(otro.codigoSku);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(codigoSku.toUpperCase());
     }
 }
