@@ -41,5 +41,40 @@ public class Main {
         inventario.mostrarProductos();
         System.out.println("\nTotal de productos registrados: " + inventario.cantidadProductos());
 
+        // ==========================================
+        // BUSQUEDA Y ORDENAMIENTO - INTEGRANTE 3
+        // ==========================================
+
+        BusquedaOrdenamiento funciones =
+                new BusquedaOrdenamiento(inventario);
+
+        // 1. Buscar producto por SKU
+        System.out.println("\n=== BUSQUEDA POR SKU ===");
+        Producto encontrado = funciones.buscarPorSku("SKU-004");
+
+        if (encontrado != null) {
+            System.out.println("Producto encontrado: " + encontrado);
+        } else {
+            System.out.println("Producto no encontrado.");
+        }
+
+        // 2. Buscar productos por nombre
+        System.out.println("\n=== BUSQUEDA POR NOMBRE ===");
+        for (Producto p : funciones.buscarPorNombre("Mouse")) {
+            System.out.println(p);
+        }
+
+        // 3. Ordenar productos por nombre
+        System.out.println("\n=== ORDENAR POR NOMBRE ===");
+        for (Producto p : funciones.ordenarPorNombre()) {
+            System.out.println(p);
+        }
+
+        // 4. Ordenar productos por precio
+        System.out.println("\n=== ORDENAR POR PRECIO ===");
+        for (Producto p : funciones.ordenarPorPrecio()) {
+            System.out.println(p);
+        }
+
     }
 }
