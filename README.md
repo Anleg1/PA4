@@ -8,9 +8,9 @@ Para separar los productos por categoría usamos herencia, una clase abstracta, 
 
 | Integrante | GitHub | Parte |
 |---|---|---|
-| (nombre) | Anleg1 | 1. Diseño y estructura |
-| (nombre) | Jorge-ben | 2. Colecciones y registro de objetos |
-| (nombre) | FrancoDC005 | 3. Búsqueda y ordenamiento |
+| Miguel Angel Caycho Roque | Anleg1 | 1. Diseño y estructura |
+| Jorge Jerson Benito Mayhua | Jorge-ben | 2. Colecciones y registro de objetos |
+| Franco Andrés Diaz Carreal | FrancoDC005 | 3. Búsqueda y ordenamiento |
 | David Jared Damazo Valdeos | davidjdv14-jm11 | 4. Herencia, interfaz y entrega |
 
 ## Diseño adoptado
