@@ -76,5 +76,10 @@ public class Main {
             System.out.println(p);
         }
 
+        // ==========================================
+        // HERENCIA, CLASE ABSTRACTA E INTERFAZ - INTEGRANTE 4
+        // ==========================================
+        PruebaHerencia.ejecutar(inventario);
+
     }
 }
