@@ -83,4 +83,4 @@ Cada caso debe decir "correcto" en la consola.
 
 ## Video de exposición
 
-https://youtu.be/ENLACE_DEL_VIDEO
+-  (https://www.youtube.com/watch?v=w771MPw2AfI)
